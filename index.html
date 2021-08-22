@@ -17,9 +17,10 @@
   <body>
     <!-- Header -->
     <header>
-        <nav>
+        <nav onclick="actionToggle();">
+            <span><i class="fas fa-plus"></i></span>
             <ul>
-                <li><a href="#vakances">Vakances</a></li>
+                <li><a href="vakances.html">Vakances</a></li>
                 <li><a href="#partneriem">Sadarbības partneriem</a></li>
                 <li><a href="#forma">Pieteikuma forma</a></li>
                 <li><a href="#par-mums">Par mums</a></li>
@@ -27,13 +28,19 @@
                 <li><a href="#valoda"><i class="fas fa-globe"></i></a></li>
             </ul>
         </nav>
-      </div>
+        <script type="text/javascript">
+          function actionToggle(){
+            var action = document.querySelector('nav');
+            action.classList.toggle('active');
+          }
+        </script>
       <div class="banner">
         <video src="resources/images/DN.mov" autoplay class="desktop">Video not supported</video>
-        <video src="resources/images/Copy of DN.mov" autoplay class="mobile">Video not supported</video>
+        <img src="resources/images/DN-mob.png" alt="Logo of DN Recruitment agency" class="mobile" />
         <div class="text">
           <h1>Meklējat darbiniekus, bet nevarat atrast?</h1>
-          <p><span><a href="https://dnrecruitment.lv/kontakti/">Sūtiet</a></span> savu pieteikumu un mēs Jums palīdzēsim atrast piemērotāko speciālistu atbilstoši Jūsu prasībām!</p>
+          <p>Sūtiet savu pieteikumu un mēs Jums palīdzēsim atrast piemērotāko speciālistu atbilstoši Jūsu prasībām!</p>
+          <a href="#forma" class="button-primary">Pieteikuma forma</a>
         </div>
       </div>
     </header>

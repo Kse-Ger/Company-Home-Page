@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="lv">
+    <head>
+        <title>DN Recruitment</title>
+        <link rel="shortcut icon" href="resources/images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="resources/images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="resources/css/styles.css" type="text/css" />
+        <style>
+          @import url('https://fonts.googleapis.com/css2?family=KoHo&family=Kodchasan&display=swap');
+        </style>
+        <meta charset="UTF-8"/>
+        <script src="https://kit.fontawesome.com/3c9bf34d84.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width">
+    </head>
+
+    <body>
+        <!-- Header -->
+        <header>
+            <nav onclick="actionToggle();">
+                <span><i class="fas fa-plus"></i></span>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#partneriem">Sadarbības partneriem</a></li>
+                    <li><a href="#forma">Pieteikuma forma</a></li>
+                    <li><a href="#par-mums">Par mums</a></li>
+                    <li><a href="#kontakti">Kontakti</a></li>
+                    <li><a href="#valoda"><i class="fas fa-globe"></i></a></li>
+                </ul>
+            </nav>
+            <script type="text/javascript">
+              function actionToggle(){
+                var action = document.querySelector('nav');
+                action.classList.toggle('active');
+              }
+            </script>
+            
+        </header>
+        <div class="page-name">
+            <h1>VAKANCES</h1>
+        </div>
+    </body>
+
+    <!-- Main -->
+
+    <main>
+
+        <!-- Vakances -->
+        <article class="vakances v">
+            <h2>Jaunākie darbi</h2>
+            <div class="list v">
+
+            <div class="job v">
+                <h2>Betonētājs</h2>
+                <div class="location">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Vācija</p>
+                </div>
+                <div class="money">
+                <i class="fas fa-money-bill-wave"></i>
+                <p>15€/h (Netto)</p>
+                </div>
+            </div>
+
+            <div class="job v">
+                <h2>Iekšdarbu meistars ar vācu valodas zināšanām</h2>
+                <div class="location">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Vācija</p>
+                </div>
+                <div class="money">
+                <i class="fas fa-money-bill-wave"></i>
+                <p>15€/h (Netto)</p>
+                </div>
+            </div>
+            
+            <div class="job v">
+                <h2>Krāsotājs/-a</h2>
+                <div class="location">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Vācija</p>
+                </div>
+                <div class="money">
+                <i class="fas fa-money-bill-wave"></i>
+                <p>12,50€/h (Netto)</p>
+                </div>
+            </div>
+            
+            <div class="job v">
+                <h2>Ģipškartona montētājs/-a</h2>
+                <div class="location">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Vācija</p>
+                </div>
+                <div class="money">
+                <i class="fas fa-money-bill-wave"></i>
+                <p>12,50€/h (Netto)</p>
+                </div>
+            </div>
+            
+            <div class="job v">
+                <h2>Apmetējs/-a</h2>
+                <div class="location">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Vācija</p>
+                </div>
+                <div class="money">
+                <i class="fas fa-money-bill-wave"></i>
+                <p>12,50€/h (Netto)</p>
+                </div>
+            </div>
+            </div>
+        </article>
+        
+        <div class="sazinaties">
+            <a href="#kontakti" class="button-primary">Sazināties ar mums</a>
+        </div>
+        
+
+        <!-- Info -->
+        <article class="bottom">
+            <div class="content">
+            <div class="column connected">
+                <h2>Stay Connected!</h2>
+                <p>Piesakieties jaunumu saņemšanai e-pastā</p>
+                <input type="email" name="customer_email" value="" size="40" aria-required="true" aria-invalid="false" placeholder="E-pasts"></input>
+                <a class="button-primary">Pieteikties</a>
+                <a href="https://www.facebook.com/dnrecruitment.lv" target=”_blank” class="facebook"><i class="fab fa-facebook-square fa-3x"></i></a>
+                <div class="office inline">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>SIA "EUROEXPRESS"<br>
+                    Latvija, Rīga, Bieķensalas iela 26, LV-1004</p>
+                </div>
+                <div class="office inline">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>DN RECRUITMENT SP. Z O. O.<br>
+                    Polija, Ļubļina, Melgiewska 74/200, 20-234</p>
+                </div>
+            </div>
+
+            <div class="column buj">
+                <h2>Biežāk uzdotie jautājumi</h2>
+                <p>Mēs esam šeit, lai palīdzētu.</p>
+                <div class="link arrow">
+                <a href="#">Iepazīstieties ar mūsu BUJ</a>
+                </div>
+            </div>
+            
+            <div class="column licence">
+                <h2>Licence</h2>
+                <p>Mums ir Latvijas un Vācijas nodarbinātības aģentūras izsniegtas licences darbiekārtošanas pakalpojumu sniegšanai</p>
+                <h4 class="latvian1">Licence darbiekārtošanas pakalpojumu sniegšanai Latvija</h4>
+                <a class="button-primary latvian2">Parādīt failu</a>
+                <h4 class="german1">Licence darbiekārtošanas pakalpojumu sniegšanai Vācija</h4>
+                <a class="button-primary german2">Parādīt failu</a>
+            </div>
+
+            </div>
+        </article> 
+    </main>
+
+    <!-- Footer-->
+
+    <footer>
+        <div class="footer">
+          <p>© 2021 SIA "EUROEXPRESS". All rights reserved.</p>
+          <a href="#">Privātuma politika</a>
+        </div> 
+    </footer>
+</html>

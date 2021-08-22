@@ -20,8 +20,8 @@ h1, h2, h3, h4 {
 }
 
 *:hover {
-    -webkit-transition: all 0.25s ease-in-out;
-	transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 
 .button-primary {
@@ -51,6 +51,10 @@ nav {
     padding-top: 10px;
 }
 
+nav span {
+    display: none;
+}
+
 nav ul {
     display: flex;
     justify-content: space-around;
@@ -75,6 +79,7 @@ nav ul li a:hover {
     display: flex;
     width: 85%;
     margin: 0 auto 100px;
+    padding-bottom: 40px;
     /*position: relative;
     top: 64px;*/
 }
@@ -97,6 +102,10 @@ nav ul li a:hover {
 
 .banner p {
     text-align: center;
+    width: 85%;
+    font-size: 1.7em;
+    margin-top: 0px;
+    margin-bottom: 40px;
 }
 
 .banner a {
@@ -128,20 +137,65 @@ nav ul li a:hover {
     }
 
     nav {
-        margin-top: 10px;
-        height: 50%;
+        position: fixed;
+        padding-top: 0;
+        top: 30px;
+        right: 30px;
+        width: 50px;
+        height: 50px;
+        background-color: #3456FF;
+        border-radius: 50%;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+    }
+
+    nav span {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        color: #D9D9D9;
+        width: 100%;
+        height: 100%;
+        font-size: 1.5em;
+        transition: 0.3s ease-in-out;
+    }
+
+    nav:active span {
+        transform: rotate(135deg);
     }
 
     nav ul {
-       flex-direction: column;
-       justify-content: center;
-       align-items: center; 
-       padding: 0px;
-       margin: 0px;
+        position: absolute;
+        top: 55px;
+        right: 0;
+        background: #d9d9d9f3;
+        color: #070928;
+        padding: 20px;
+        border-radius: 20px;
+        visibility: hidden;
+        transition: 0.3s;
+        flex-direction: column;
+        float: left;
+        margin: 0px;
     } 
 
+    nav.active ul {
+        top: 65px;
+        visibility: visible;
+        transition: 0.3s;
+    }
+
     nav ul li {
-        margin-bottom: 20px;
+        margin: 0px 10px 20px 0;
+    }
+
+    nav ul li:last-of-type {
+        margin-bottom: 0;
+    }
+
+    nav ul li a {
+        color: #070928;
+        font-weight: bolder;
     }
 
     .banner {
@@ -154,11 +208,12 @@ nav ul li a:hover {
 
     .banner h1 {
         font-weight: bold;
-        font-size: 2.5em;
+        font-size: 2.4em;
     }
 
     .banner p {
         width: 75%;
+        font-size: 1em;
     }
 }
 
@@ -271,7 +326,7 @@ nav ul li a:hover {
     width: 70%;
     display: grid;
     grid-template: repeat(2, 1fr)/repeat(3, 1fr);
-    grid-gap: 20px 10px;
+    grid-gap: 30px 10px;
 }
 
 
@@ -284,12 +339,14 @@ nav ul li a:hover {
 
 .job h2 {
     width: 90%;
+    margin-bottom: 10px;
 }
 
 .location, .money {
     display: inline-flex;
     align-items: center;
     justify-content: flex-start;
+    height: 40px;
 }
 
 .location p, .money p {
@@ -510,4 +567,33 @@ footer {
 .footer a {
     color: #fff;
     text-decoration: none;
+}
+
+/* Vakances.html */
+/* Page name */
+
+.page-name,.vakances.v {
+    margin: 60px auto 0px;
+}
+
+.sazinaties {
+    width: fit-content;
+    margin: 60px auto 0px;
+    align-items: center;
+}
+
+.list.v {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.job.v {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.job.v:last-of-type {
+    margin-bottom: 0;
 }
